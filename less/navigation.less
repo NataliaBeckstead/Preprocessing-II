@@ -2,7 +2,7 @@ nav {
     display: flex;
     justify-content: center;
     border-bottom: 2px dashed @navigation-border;
-    div.navContainer {
+    .navContainer {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -21,6 +21,12 @@ nav {
                     color: @button-color;
                     cursor: pointer;
                 }
+            }
+        }
+        @media @mobile {
+            flex-direction: column;
+            .menu {
+                width: 100%;
             }
         }
         

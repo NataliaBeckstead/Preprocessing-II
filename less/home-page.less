@@ -7,9 +7,12 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 75%;
+    width: 82%;
     max-width: 800px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      width: 90%;
+    }
     h2 {
       padding-top: 30px;
     }
@@ -28,9 +31,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
    
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -42,6 +43,17 @@ header {
 
       img {
         border-radius: 10px;
+      }
+    }
+    @media @mobile {
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 3rem;
+      .text-content {
+        width: 90%;
+      }
+      .img-content {
+        width: 90%;
       }
     }
   }
@@ -58,6 +70,9 @@ header {
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+    }
+    @media @mobile {
+      flex-direction: column-reverse;
     }
   }
 
@@ -81,6 +96,16 @@ header {
       margin-bottom: 30px;
       .btn {
         .button(@button-color, 85%, white);
+      }
+    }
+    @media @mobile {
+      flex-direction: column;
+      .destination {
+        width: 90%;
+        padding-left: 3rem;
+        .btn {
+          .button(@button-color, 90%, white);
+        }
       }
     }
   }
