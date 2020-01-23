@@ -193,6 +193,7 @@ nav div.navContainer .menu a {
 }
 nav div.navContainer .menu a:hover {
   color: #008080;
+  cursor: pointer;
 }
 .footer {
   width: 100%;
@@ -269,4 +270,15 @@ header .head p {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  display: block;
+  background-color: #008080;
+  cursor: pointer;
+  width: 85%;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  padding: 1.4rem 4rem;
+  color: white;
 }
