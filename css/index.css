@@ -238,6 +238,35 @@ header .head h2 {
 header .head p {
   padding-bottom: 30px;
 }
+header .head img {
+  animation-name: head;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+  animation-direction: alternate;
+}
+@keyframes head {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes button {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -313,6 +342,11 @@ header .head p {
   text-align: center;
   padding-top: 1.3rem;
   color: white;
+  animation-name: button;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-direction: alternate;
 }
 @media (max-width: 500px) {
   .home .content-pick {

@@ -19,10 +19,36 @@ header {
     p {
       padding-bottom: 30px;
     }
+    //using animation parametric mixin
+    img {
+      .animation (head, 3s, 1)
+    }
   } 
 }
 
+@keyframes head {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
+@keyframes button {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0.5;
+  }
+  75% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 1;
+  }
+}
 
 .home {
 
@@ -96,6 +122,8 @@ header {
       margin-bottom: 30px;
       .btn {
         .button(@button-color, 85%, white);
+        //using animation parametric mixin
+        .animation (button, 1s, infinite)
       }
     }
     @media @mobile {
