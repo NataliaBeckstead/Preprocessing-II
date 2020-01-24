@@ -245,28 +245,6 @@ header .head img {
   animation-duration: 3s;
   animation-direction: alternate;
 }
-@keyframes head {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes button {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -367,5 +345,27 @@ header .head img {
     text-align: center;
     padding-top: 1.3rem;
     color: white;
+  }
+}
+@keyframes head {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes button {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }
