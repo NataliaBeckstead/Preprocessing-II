@@ -3,22 +3,7 @@ header {
   display: flex;
   justify-content: center;
   .head {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 82%;
-    max-width: 800px;
     border-bottom: 2px dashed @navigation-border;
-    @media @mobile {
-      width: 90%;
-    }
-    h2 {
-      padding-top: 30px;
-    }
-    p {
-      padding-bottom: 30px;
-    }
     img {
       .animation (head, 3s, 1) //using animation parametric mixin
     }
@@ -49,12 +34,11 @@ header {
     @media @mobile {
       flex-direction: column;
       justify-content: center;
-      padding-left: 3rem;
       .text-content {
-        width: 90%;
+        width: 100%;
       }
       .img-content {
-        width: 90%;
+        width: 100%;
       }
     }
   }
@@ -83,6 +67,9 @@ header {
 
     img {
       border-radius: 10px;
+    }
+    @media @mobile {
+      width: 100%;
     }
   }
 

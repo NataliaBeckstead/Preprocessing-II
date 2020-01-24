@@ -219,24 +219,7 @@ header {
   justify-content: center;
 }
 header .head {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  width: 82%;
-  max-width: 800px;
   border-bottom: 2px dashed #C0C0C0;
-}
-@media (max-width: 500px) {
-  header .head {
-    width: 90%;
-  }
-}
-header .head h2 {
-  padding-top: 30px;
-}
-header .head p {
-  padding-bottom: 30px;
 }
 header .head img {
   animation-name: head;
@@ -266,13 +249,12 @@ header .head img {
   .home .content-section {
     flex-direction: column;
     justify-content: center;
-    padding-left: 3rem;
   }
   .home .content-section .text-content {
-    width: 90%;
+    width: 100%;
   }
   .home .content-section .img-content {
-    width: 90%;
+    width: 100%;
   }
 }
 .home .inverse-content {
@@ -298,6 +280,11 @@ header .head img {
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
