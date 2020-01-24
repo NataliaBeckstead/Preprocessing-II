@@ -19,9 +19,8 @@ header {
     p {
       padding-bottom: 30px;
     }
-    //using animation parametric mixin
     img {
-      .animation (head, 3s, 1)
+      .animation (head, 3s, 1) //using animation parametric mixin
     }
   } 
 }
@@ -115,3 +114,27 @@ header {
   }
 }// home
 
+//animation
+@keyframes head {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes button {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
